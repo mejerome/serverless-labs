@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+
+  tasks:
+    - name: Create the pizza-order dynamodb table
+      dynamodb_table:
+        name: pizza-orders
+        region: us-east-2
+        state: absent
