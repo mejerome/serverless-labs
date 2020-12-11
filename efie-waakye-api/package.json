@@ -1,0 +1,18 @@
+{
+  "name": "efie-waakye-api",
+  "version": "1.0.0",
+  "description": "Api for ordering waakye through facebook",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jerome tabiri",
+  "license": "ISC",
+  "keywords": [
+    "waakye",
+    "gari"
+  ],
+  "dependencies": {
+    "claudia-api-builder": "^4.1.2"
+  }
+}

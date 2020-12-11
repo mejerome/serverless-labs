@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "efie-waakye-api-executor",
+    "name": "efie-waakye-api",
+    "region": "us-east-2"
+  },
+  "api": {
+    "id": "17ewo95rra",
+    "module": "api"
+  }
+}

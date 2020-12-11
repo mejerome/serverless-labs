@@ -5,10 +5,17 @@ const AWS = AWSXRay.captureAWS(require('aws-sdk'))
 const docClient = new AWS.DynamoDB.DocumentClient()
 const rp = require('minimal-request-promise')
 
-module.exports = function createOrder(request) {
-    console.log('Save an order', request)
+function createOrder(request) {
+    console.log('Save an order', request.body)
+    const userData = request.context.authorizer.claims
+    console.log('User data', userData)
 
-    if (!request || !request.pizza || !request.address)
+    let userAddress = request.body && request.body.address
+    if (!userAddress) {
+        userAddress = JSON.parse(userData.address).formatted
+    }
+
+    if (!request.body || !request.body.pizza || !userAddress)
         throw new Error('To order pizza please provide a pizza type and address to deliver the order.')
     
     return rp.post('https://some-like-it-hot.effortless-serverless.com/delivery', {
@@ -19,7 +26,7 @@ module.exports = function createOrder(request) {
         body: JSON.stringify({
             pickupTime: '15.44pm',
             pickupAddress: 'Aunt Maria Pizzeria',
-            deliveryAddress: request.address,
+            deliveryAddress: userAddress,
             webhookUrl: 'https://irywdqh9v3.execute-api.us-east-2.amazonaws.com/latest/delivery'
         })
     })
@@ -28,9 +35,10 @@ module.exports = function createOrder(request) {
         return docClient.put({
             TableName: 'pizza-orders',
             Item: {
+                cognitoUsername: userAddress['cognito:username'],
                 orderId: response.deliveryId,
-                pizza: request.pizza,
-                address: request.address,
+                pizza: request.body.pizza,
+                address: userAddress,
                 orderStatus: 'pending'
             }
         }).promise()
@@ -45,3 +53,4 @@ module.exports = function createOrder(request) {
     })
 }
 
+module.exports = createOrder

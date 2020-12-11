@@ -11,10 +11,9 @@ const deleteOrder = require('./handlers/delete-order')
 const updateDeliveryStatus = require('./handlers/update-delivery-status')
 
 api.registerAuthorizer('userAuthentication', {
-    providerARNs: [process.env.userPoolArn]
-})
-
-api.get('/', () => 'Welcome to JT-Pizza API')
+       providerARNs: ['arn:aws:cognito-idp:us-east-2:452363772603:userpool/us-east-2_8YBJY6EuL'] 
+    })
+api.get('/', () => 'Welcome to Ablekuma-Pizza API')
 
 api.get('/pizzas', () => {
     return getPizzas()
