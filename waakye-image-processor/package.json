@@ -1,0 +1,29 @@
+{
+    "name": "waakye-image-processor",
+    "version": "1.0.0",
+    "description": "process waakey images to thumbnails",
+    "main": "index.js",
+    "scripts": {
+        "start": "serverless offline -s dev",
+        "test": "mocha"
+    },
+    "keywords": [
+        "image",
+        "waakye",
+        "thumbnails"
+    ],
+    "author": "jerome tabiri",
+    "license": "ISC",
+    "dependencies": {
+        "aws-sdk": "^2.810.0",
+        "child_process": "^1.0.2",
+        "fs": "0.0.1-security",
+        "mime": "^2.4.6",
+        "path": "^0.12.7",
+        "sharp": "^0.26.3"
+    },
+    "devDependencies": {
+        "serverless-offline": "^6.8.0",
+        "serverless-webpack": "^5.3.5"
+    }
+}

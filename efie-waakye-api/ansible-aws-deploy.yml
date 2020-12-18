@@ -1,0 +1,29 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+
+  tasks:
+    - name: Create waakye menu dynamodb table
+      dynamodb_table:
+        name: waakye
+        region: us-east-2
+        hash_key_name: waakyeId
+        hash_key_type: STRING
+        read_capacity: 1
+        write_capacity: 1
+        tags:
+          tag_name: waakye-api
+
+    - name: Create dynamodb table with hash and range primary key for orders
+      dynamodb_table:
+        name: waakye-orders
+        region: us-east-2
+        hash_key_name: orderId
+        hash_key_type: STRING
+        read_capacity: 1
+        write_capacity: 1
+        tags:
+          tag_name: waakye-api

@@ -13,6 +13,14 @@
     "gari"
   ],
   "dependencies": {
-    "claudia-api-builder": "^4.1.2"
+    "aws-sdk": "^2.808.0",
+    "aws-xray-sdk-core": "^3.2.0",
+    "claudia-api-builder": "^4.1.2",
+    "install": "^0.13.0",
+    "minimal-request-promise": "^1.5.0",
+    "serverless": "^2.15.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^6.8.0"
   }
 }
