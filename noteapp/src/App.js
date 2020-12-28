@@ -56,7 +56,7 @@ function App() {
       } catch (err) {
           console.log('error: ', err)
           dispatch({ type: 'ERROR' })
-      }     
+      }
   }
 
   async function createNote() {
