@@ -20,6 +20,7 @@ function App() {
       isAdmin = true
     }
   }
+  
   useEffect(() => {
     fetchImages()
   }, [])

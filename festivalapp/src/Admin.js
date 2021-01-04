@@ -1,7 +1,7 @@
 import React from 'react'
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
-import { Auth } from "aws-amplify";
-import { Button } from "antd";
+// import { Auth } from "aws-amplify";
+// import { Button } from "antd";
 
 function Admin() {
     return (

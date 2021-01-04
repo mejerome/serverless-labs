@@ -1,4 +1,3 @@
-import { container } from 'aws-amplify'
 import React from 'react'
 
 export default function Container({ children }) {
