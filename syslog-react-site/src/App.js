@@ -1,15 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-      </header>
-    </div>
-  );
+	return (
+		<div className="container">
+			<Navbar />
+		</div>
+	);
 }
 
 export default App;
