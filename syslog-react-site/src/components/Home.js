@@ -5,6 +5,7 @@ function Home() {
 	return (
 		<div>
 			<Carousel />
+			<br />
 			<Midpage />
 		</div>
 	);
