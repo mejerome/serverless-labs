@@ -1,10 +1,6 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Services from "./Services";
-import Contact from "./Contact";
-import Blog from "./Blog";
+import { Link } from "react-router-dom";
+
 import syslogLogo from "./images/small_logo.png";
 
 function Navbar() {
@@ -48,21 +44,6 @@ function Navbar() {
 					</ul>
 				</div>
 			</nav>
-			<Route path="/" exact>
-				<Home />
-			</Route>
-			<Route path="/about">
-				<About />
-			</Route>
-			<Route path="/services">
-				<Services />
-			</Route>
-			<Route path="/contact">
-				<Contact />
-			</Route>
-			<Route path="/blog">
-				<Blog />
-			</Route>
 		</div>
 	);
 }

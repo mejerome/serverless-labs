@@ -31,6 +31,33 @@
 			type="text/javascript"
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".customer-logos").slick({
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 1500,
+					arrows: false,
+					dots: false,
+					pauseOnHover: false,
+					responsive: [
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 4,
+							},
+						},
+						{
+							breakpoint: 520,
+							settings: {
+								slidesToShow: 3,
+							},
+						},
+					],
+				});
+			});
+		</script>
 		<!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

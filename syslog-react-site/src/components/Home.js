@@ -1,19 +1,14 @@
 import React from "react";
-import Carousel from "./Carousel";
-import Midpage from "./Midpage";
-import Clients from "./Clients";
-import Map from "./Map";
+// import Carousel from "./Carousel";
+// import Midpage from "./Midpage";
+// import Clients from "./Clients";
+// import Map from "./Map";
+import Homebody from "./Homebody";
 
 function Home() {
 	return (
-		<div>
-			<Carousel />
-			<br />
-			<Midpage />
-			<br />
-			<br />
-			<Clients />
-			<Map />
+		<div className="container">
+			<Homebody />
 		</div>
 	);
 }
