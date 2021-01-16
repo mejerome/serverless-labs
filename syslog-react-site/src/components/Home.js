@@ -1,14 +1,14 @@
 import React from "react";
-// import Carousel from "./Carousel";
-// import Midpage from "./Midpage";
-// import Clients from "./Clients";
-// import Map from "./Map";
-import Homebody from "./Homebody";
+import Header from "./headerHome";
+import BodyHome from "./bodyHome";
+import "./styles.css";
 
 function Home() {
 	return (
-		<div className="container">
-			<Homebody />
+		<div>
+			<Header />
+			<hr className="featurette-divider" />
+			<BodyHome />
 		</div>
 	);
 }

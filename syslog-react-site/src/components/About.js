@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./Header";
-import Aboutbody from "./Aboutbody";
+import HeaderAbout from "./Header";
+import AboutBody from "./bodyAbout";
 
 function About() {
 	return (
 		<div className="">
-			<Header />
-			<Aboutbody />
+			<HeaderAbout title="Who we are?" />
+			<AboutBody />
 		</div>
 	);
 }

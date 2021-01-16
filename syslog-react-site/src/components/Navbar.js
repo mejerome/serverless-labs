@@ -5,13 +5,13 @@ import syslogLogo from "./images/small_logo.png";
 
 function Navbar() {
 	return (
-		<div>
+		<div className="container">
 			<nav class="navbar navbar-light navbar-expand-lg bg-light">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="/">
 						<img src={syslogLogo} alt="" height="50" />
 					</a>
-					<ul class="nav justify-content-end">
+					<ul class="nav justify-content-end ">
 						<li class="nav-item">
 							<a
 								class="nav-link active"

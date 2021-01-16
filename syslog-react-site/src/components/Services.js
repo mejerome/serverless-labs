@@ -1,9 +1,12 @@
 import React from "react";
+import Header from "./Header";
+import BodyServices from "./bodyServices";
 
 function Services() {
 	return (
 		<div>
-			<h1>Services page here...</h1>
+			<Header title="What we do?" />
+			<BodyServices />
 		</div>
 	);
 }

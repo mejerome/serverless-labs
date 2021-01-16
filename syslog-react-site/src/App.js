@@ -6,10 +6,11 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import { Route } from "react-router-dom";
+import "./components/styles.css";
 
 function App() {
 	return (
-		<div className="container">
+		<div className="">
 			<Navbar />
 			<body>
 				<Route path="/" exact>

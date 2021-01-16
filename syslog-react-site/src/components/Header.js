@@ -1,35 +1,19 @@
 import React from "react";
-import "./styles.css";
 
-function Header() {
+function headerAbout(props) {
 	return (
-		<header class="bg-primary py-5 mb-5">
-			<div class="container h-100">
-				<div class="row h-100 align-items-center">
-					<div class="col-lg-12">
-						<h1 class="display-4 text-white mt-5 mb-2">
-							Business Name or Tagline
-						</h1>
-						<p class="lead mb-5 text-white-50">
-							Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Non possimus ab labore provident mollitia. Id
-							assumenda voluptate earum corporis facere quibusdam
-							quisquam iste ipsa cumque unde nisi, totam quas
-							ipsam.
-						</p>
+		<div>
+			<div>
+				<div class="position-relative overflow-hidden text-center bg-light">
+					<div class="col-md-5 mx-auto my-5">
+						<h1 class="display-4 fw-normal">{props.title}</h1>
 					</div>
+					<div class="product-device shadow-sm d-none d-md-block"></div>
+					<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 				</div>
 			</div>
-			<div class="card text-white bg-secondary my-5 py-4 text-center">
-				<div class="card-body">
-					<p class="text-white m-0">
-						This call to action card is a great place to showcase
-						some important information or display a clever tagline!
-					</p>
-				</div>
-			</div>
-		</header>
+		</div>
 	);
 }
 
-export default Header;
+export default headerAbout;
