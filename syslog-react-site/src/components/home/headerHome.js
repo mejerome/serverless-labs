@@ -1,29 +1,37 @@
 import React from "react";
 import "./../styles.css";
 import { Carousel } from "react-bootstrap";
-import slide01 from "./../images/slide03.jpg";
-import slide02 from "./../images/slide05.jpg";
-import slide03 from "./../images/slide06.jpg";
+import slide01 from "./../img/pexels-christina-morillo-1181354.jpg";
+import slide02 from "./../img/pexels-charles-wundengba-4212955.jpg";
+import slide03 from "./../img/pexels-cottonbro-5054208.jpg";
+import slide04 from "./../img/pexels-omotayo-tajudeen-3213283.jpg";
 
 function Header() {
 	return (
 		<div>
-			<Carousel>
-				<Carousel.Item>
+			<Carousel fade>
+				<Carousel.Item interval={3000}>
 					<img
-						className="d-block w-100"
+						className="img-fluid"
 						src={slide01}
 						alt="First slide"
 					/>
 					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>
-							Nulla vitae elit libero, a pharetra augue mollis
-							interdum.
-						</p>
+						<div className="text-block">
+							<h3>
+								Bringing together technology, culture and value
+							</h3>
+							<p>
+								Syslog Solution is committed to helping
+								enterprises get ready for the coming digital
+								change. Businesses are faced with the
+								transformation of legacy while keeping pace with
+								digital, data, voice and soon AI.
+							</p>
+						</div>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item>
+				<Carousel.Item interval={3000}>
 					<img
 						className="d-block w-100"
 						src={slide02}
@@ -31,14 +39,22 @@ function Header() {
 					/>
 
 					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit.
-						</p>
+						<div className="text-block">
+							<h3>Move fast and connect deeper</h3>
+							<p>
+								Digital has the power to connect the
+								unconnected, and drives humans to expect the
+								unexpected in all we do. Your business is built
+								on the experiences you provide and the
+								connections you foster. As the leading digital
+								consultancy, we will help you move faster,
+								engage smarter, and connect deeper with your
+								customers to grow your business.
+							</p>
+						</div>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item>
+				<Carousel.Item interval={3000}>
 					<img
 						className="d-block w-100"
 						src={slide03}
@@ -46,79 +62,48 @@ function Header() {
 					/>
 
 					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl
-							consectetur.
-						</p>
+						<div className="text-block">
+							<h3> Improved IT service Delivery </h3>
+							<p>
+								Our DevOps approach helps to develop & deploy
+								high-quality software products and services.
+								Providing better resource management & Devops
+								management plans with re-using option & low-cost
+								implementation.
+							</p>
+							<ul className="text-left">
+								<li>Instant scaling up of servers</li>
+								<li>No more mismatch of server states</li>
+								<li>Real-time deployments with no downtime</li>
+								<li>Drastically improve consistency</li>
+							</ul>
+						</div>
+					</Carousel.Caption>
+				</Carousel.Item>
+				<Carousel.Item interval={3000}>
+					<img
+						className="d-block w-100"
+						src={slide04}
+						alt="Third slide"
+					/>
+
+					<Carousel.Caption>
+						<div className="text-block">
+							<h3>Intercepting Banking Experiences</h3>
+							<p>
+								Together with our partner Bank-Genie we create
+								technology that intercepts traditional banking
+								processes and transforms them into experiences
+								to make things easier, better and faster.
+								Because, great experiences have the power to
+								inspire, make emotional connections, build
+								loyalty, and drive commerce.
+							</p>
+						</div>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
 		</div>
-		// <header className="container">
-		// 	<div
-		// 		id="carouselExampleFade"
-		// 		className="carousel slide carousel-fade"
-		// 		data-bs-ride="carousel"
-		// 	>
-		// 		<div className="carousel-inner">
-		// 			<div class="carousel-item active">
-		// 				<img src={slide01} class="d-block w-100" alt="..." />
-		// 				<div class="carousel-caption d-none d-md-block">
-		// 					<h5>First slide label</h5>
-		// 					<p>
-		// 						Nulla vitae elit libero, a pharetra augue mollis
-		// 						interdum.
-		// 					</p>
-		// 				</div>
-		// 			</div>
-		// 			<div class="carousel-item">
-		// 				<img src={slide02} class="d-block w-100" alt="..." />
-		// 				<div class="carousel-caption d-none d-md-block">
-		// 					<h5>Second slide label</h5>
-		// 					<p>
-		// 						Lorem ipsum dolor sit amet, consectetur
-		// 						adipiscing elit.
-		// 					</p>
-		// 				</div>
-		// 			</div>
-		// 			<div class="carousel-item">
-		// 				<img src={slide03} class="d-block w-100" alt="..." />
-		// 				<div class="carousel-caption d-none d-md-block">
-		// 					<h5>Third slide label</h5>
-		// 					<p>
-		// 						Praesent commodo cursus magna, vel scelerisque
-		// 						nisl consectetur.
-		// 					</p>
-		// 				</div>
-		// 			</div>
-		// 		</div>
-		// 		<a
-		// 			className="carousel-control-prev"
-		// 			href="#carouselExampleFade"
-		// 			role="button"
-		// 			data-bs-slide="prev"
-		// 		>
-		// 			<span
-		// 				className="carousel-control-prev-icon"
-		// 				aria-hidden="true"
-		// 			></span>
-		// 			<span className="visually-hidden">Previous</span>
-		// 		</a>
-		// 		<a
-		// 			className="carousel-control-next"
-		// 			href="#carouselExampleFade"
-		// 			role="button"
-		// 			data-bs-slide="next"
-		// 		>
-		// 			<span
-		// 				className="carousel-control-next-icon"
-		// 				aria-hidden="true"
-		// 			></span>
-		// 			<span className="visually-hidden">Next</span>
-		// 		</a>
-		// 	</div>
-		// </header>
 	);
 }
 

@@ -3,9 +3,12 @@ import threeSixty from "./../images/360marketing.png";
 import btlAfrica from "./../images/btlafrica.png";
 import cosmos from "./../images/cosmo.png";
 import equity from "./../images/equity2-300x251.jpeg";
-
+import matha from "./../images/mathacapita.png";
+import national from "./../images/nationaltheater.png";
+import wembley from "./../images/wembley.png";
 import cloudIll from "./../img/undraw_dev_productivity_umsq.svg";
 import dudeIll from "./../img/undraw_maintenance_cn7j.svg";
+import "./../styles.css";
 
 import { Row, Col, Image } from "react-bootstrap";
 
@@ -44,7 +47,7 @@ function bodyHome() {
 				<hr className="featurette-divider" />
 
 				<div className="row text-justify featurette">
-					<div className="col-md-7 order-md-2 pt-5">
+					<div className="col-md-6 order-md-2 pt-5">
 						<h4 className="featurette-heading">
 							Oh yeah, it’s that good.{" "}
 							<span className="text-muted">
@@ -59,74 +62,35 @@ function bodyHome() {
 							cloud-native environments.
 						</p>
 					</div>
-					<div className="col-md-5 order-md-1">
-						<img src={dudeIll} alt=".." height={300} />
+					<div className="col-md-6 order-md-1">
+						<img src={dudeIll} alt=".." className="img-fluid" />
 					</div>
 				</div>
 
 				<hr className="featurette-divider" />
-				{/* <div>
-				<div className="row">
-					<div className="col">
-						<div className="card">
-							<img
-								src={threeSixty}
-								className="card-img-top"
-								alt="..."
-							/>
-							<div className="card-body"></div>
-						</div>
-					</div>
-					<div className="col">
-						<div className="card">
-							<img
-								src={threeSixty}
-								className="card-img-top"
-								alt="..."
-							/>
-							<div className="card-body"></div>
-						</div>
-					</div>
-					<div className="col">
-						<div className="card">
-							<img
-								src={threeSixty}
-								className="card-img-top"
-								alt="..."
-							/>
-							<div className="card-body"></div>
-						</div>
-					</div>
-					<div className="col">
-						<div className="card">
-							<img
-								src={threeSixty}
-								className="card-img-top"
-								alt="..."
-							/>
-							<div className="card-body"></div>
-						</div>
-					</div>
-				</div>
-			</div> */}
+
+				<h2 className="text-center">Our Clients</h2>
 				<Row>
 					<Col>
 						<Image src={threeSixty} rounded height={100} />
 					</Col>
 					<Col>
-						<Image src={threeSixty} rounded height={100} />
+						<Image src={matha} rounded height={100} />
 					</Col>
 					<Col>
-						<Image src={threeSixty} rounded height={100} />
+						<Image src={equity} rounded height={100} />
 					</Col>{" "}
 					<Col>
-						<Image src={threeSixty} rounded height={100} />
+						<Image src={national} rounded height={100} />
 					</Col>
 					<Col>
-						<Image src={threeSixty} rounded height={100} />
+						<Image src={cosmos} rounded height={100} />
 					</Col>
 					<Col>
-						<Image src={threeSixty} rounded height={100} />
+						<Image src={btlAfrica} rounded height={100} />
+					</Col>
+					<Col>
+						<Image src={wembley} rounded height={100} />
 					</Col>
 				</Row>
 
