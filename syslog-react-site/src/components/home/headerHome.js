@@ -17,7 +17,7 @@ function Header() {
 						alt="First slide"
 					/>
 					<Carousel.Caption>
-						<div className="text-block">
+						<div className="text-block ">
 							<h3>
 								Bringing together technology, culture and value
 							</h3>

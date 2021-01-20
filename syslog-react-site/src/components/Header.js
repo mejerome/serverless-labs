@@ -1,15 +1,26 @@
 import React from "react";
+import "./../components/about/about.css";
 
 function headerAbout(props) {
 	return (
 		<div>
-			<div>
-				<div class="position-relative overflow-hidden text-center bg-light">
-					<div class="col-md-5 mx-auto my-5">
-						<h1 class="display-4 fw-normal">{props.title}</h1>
-					</div>
-					<div class="product-device shadow-sm d-none d-md-block"></div>
-					<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+			<div className="jumbotron jumbotron-fluid bg-dark">
+				<div className="jumbotron-background">
+					<img src={props.img} className="blur img-fluid" alt="..." />
+				</div>
+
+				<div className="container text-white">
+					<h1 className="display-4">{props.title}</h1>
+					<p className="lead mx-auto">{props.text}</p>
+					<hr className="my-4" />
+
+					<a
+						className="btn btn-primary btn-lg"
+						href="/"
+						role="button"
+					>
+						Learn more
+					</a>
 				</div>
 			</div>
 		</div>

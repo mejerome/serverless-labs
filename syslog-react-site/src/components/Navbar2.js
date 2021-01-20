@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import syslogLogo from "./images/small_logo.png";
+import "./../components/styles.css";
 
 function Navbar() {
 	return (

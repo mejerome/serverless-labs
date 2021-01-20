@@ -1,14 +1,18 @@
 import React from "react";
-import slide03 from "./../images/slide03.jpg";
+import teamImg from "./../img/Group of Black Millennials at Office.svg";
+import "./about.css";
 
 function bodyAbout() {
 	return (
 		<div>
-			<div id="about" className="container">
-				<img src={slide03} className="img-fluid " alt=".." />
+			<div id="about" className="container text-justify">
 				<hr className="featurette-divider" />
-				<div className="row">
-					<div className="col-sm-8">
+				<div className="row align-middle">
+					<div className="featurettes col-sm-8">
+						<br />
+						<br />
+						<br />
+						<h1>Syslog Solution Limited</h1>
 						<h4>
 							Syslog Solution is a highly innovative technology
 							services provider, established to provide leading
@@ -19,12 +23,13 @@ function bodyAbout() {
 							critical systems, so that your IT ecosystem can
 							support and grow with your operations.
 						</h4>
-						<a className="btn btn-outline-secondary" href="/about">
+						<br />
+						<a className="btn btn-secondary" href="/about">
 							Get in touch
 						</a>
 					</div>
 					<div className="col-sm-4">
-						<span className="glyphicon glyphicon-signal logo"></span>
+						<img src={teamImg} alt="..." />
 					</div>
 				</div>
 			</div>

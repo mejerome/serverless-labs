@@ -1,5 +1,10 @@
 /* Navbar styling  */
-
+.nav {
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	position: relative;
+}
 .navbar-brand {
 	position: relative;
 	z-index: 2;
@@ -70,23 +75,6 @@
 	}
 }
 
-/* This is the body stuff */
-
-header h2 {
-	font-size: 24px;
-	text-transform: uppercase;
-	color: #303030;
-	font-weight: 600;
-	margin-bottom: 30px;
-}
-header h4 {
-	font-size: 19px;
-	line-height: 1.375em;
-	color: #303030;
-	font-weight: 400;
-	margin-bottom: 30px;
-}
-
 .card-img-top {
 	width: 100%;
 	height: 100%;
@@ -102,30 +90,46 @@ header h4 {
 	bottom: 20px;
 	right: 20px;
 	background-color: black;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.7);
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 .text-block h3 {
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Permanent Marker", cursive;
+	text-shadow: 1px 1px gold;
 	font-size: 3vw;
 }
 .text-block p {
-	font-family: "Maven Pro", sans-serif;
-	font-size: 2vw;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.5vw;
 }
 .text-block ul {
-	font-size: 2vw;
-}
-.nav {
-	height: 50px;
-	width: 100%;
-	background-color: white;
-	position: relative;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.5vw;
 }
 
 .featurette p {
 	font-family: "Maven Pro", sans-serif;
+	font-size: 1.5vw;
+}
+
+.featurette h4 {
+	font-family: "Permanent Marker", cursive;
+	font-size: 2vw;
+}
+
+.navbar-nav a {
+	font-family: "Bebas Neue", cursive;
+	font-size: 1.5vw;
+	text-shadow: 1px 1px grey;
+}
+
+#clients-header {
+	font-family: "Permanent Marker", cursive;
+	font-size: 3vw;
+	padding: 40px;
+	color: blue;
+	text-shadow: 1px 1px grey;
 }
