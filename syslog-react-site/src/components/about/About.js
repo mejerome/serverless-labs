@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderAbout from "./Header";
+import HeaderAbout from "./../Header";
 import AboutBody from "./bodyAbout";
 
 function About() {

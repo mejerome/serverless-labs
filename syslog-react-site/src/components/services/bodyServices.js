@@ -1,11 +1,14 @@
 import React from "react";
-import cloudImg from "./images/cloud-computing-2001090_1920.jpeg";
-import codeImg from "./images/code-944499_1280-1024x550.jpg";
+import cloudImg from "./../images/cloud-computing-2001090_1920.jpeg";
+import codeImg from "./../images/code-944499_1280-1024x550.jpg";
+import slide07 from "./../images/slide07.jpg";
 
 function BodyServices() {
 	return (
 		<div>
 			<div className="container text-center">
+				<img src={slide07} className="img-fluid " alt=".." />
+				<hr className="featurette-divider" />
 				<div className="row">
 					<div className="col-lg-4">
 						<img

@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import Blog from "./components/Blog";
+import Navbar from "./components/Navbar2";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Services from "./components/services/Services";
+import Contact from "./components/contact/Contact";
+import Blog from "./components/blog/Blog";
 import { Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/styles.css";
 
 function App() {
@@ -13,21 +14,11 @@ function App() {
 		<div className="">
 			<Navbar />
 			<body>
-				<Route path="/" exact>
-					<Home />
-				</Route>
-				<Route path="/about">
-					<About />
-				</Route>
-				<Route path="/services">
-					<Services />
-				</Route>
-				<Route path="/contact">
-					<Contact />
-				</Route>
-				<Route path="/blog">
-					<Blog />
-				</Route>
+				<Route path="/" exact component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/services" component={Services} />
+				<Route path="/contact" component={Contact} />
+				<Route path="/blog" component={Blog} />
 			</body>
 		</div>
 	);

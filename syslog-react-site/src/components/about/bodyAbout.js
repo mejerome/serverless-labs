@@ -1,9 +1,12 @@
 import React from "react";
+import slide03 from "./../images/slide03.jpg";
 
 function bodyAbout() {
 	return (
 		<div>
 			<div id="about" className="container">
+				<img src={slide03} className="img-fluid " alt=".." />
+				<hr className="featurette-divider" />
 				<div className="row">
 					<div className="col-sm-8">
 						<h4>
