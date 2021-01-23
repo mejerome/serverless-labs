@@ -1,6 +1,47 @@
 import React from "react";
 import teamImg from "./../img/Group of Black Millennials at Office.svg";
-import "./about.css";
+import compImg from "./../img/Black Man Working on Analytics.svg";
+import styled from "styled-components";
+import wahabImg from "./../img/wahab-img.jpg";
+import jeromeImg from "./../img/jerome-img.jpg";
+
+const Intro = styled.div`
+	h1 {
+		font-family: "Cabin", sans-serif;
+		font-size: 2rem;
+		text-align: left;
+		color: grey;
+	}
+
+	p {
+		font-family: "Roboto Slab", serif;
+	}
+`;
+
+const Values = styled.div`
+	h2 {
+		font-family: "Cabin", sans-serif;
+		padding-top: 30px;
+	}
+	h5 {
+		font-family: "Roboto Slab", serif;
+		text-align: left;
+		color: grey;
+		font-weight: normal;
+	}
+	p {
+		font-family: "Roboto", sans-serif;
+		font-size: 1rem;
+	}
+`;
+
+const Team = styled.div`
+	padding: 40px;
+	font-size: 1vmax;
+	p {
+		text-align: center;
+	}
+`;
 
 function bodyAbout() {
 	return (
@@ -8,49 +49,56 @@ function bodyAbout() {
 			<div id="about" className="container text-justify">
 				<hr className="featurette-divider" />
 				<div className="row align-middle">
-					<div className="featurettes col-sm-8">
+					<Intro className="col-sm-8">
 						<br />
 						<br />
 						<br />
 						<h1>Syslog Solution Limited</h1>
-						<h4>
+						<p>
 							Syslog Solution is a highly innovative technology
 							services provider, established to provide leading
 							edge intelligent solutions and consulting services
 							to small & medium sized businesses, organizations
-							and government institutions. We assist in ensuring
-							high availability and scalability of mission
-							critical systems, so that your IT ecosystem can
-							support and grow with your operations.
-						</h4>
+							and government institutions.
+						</p>
+						<p>
+							We assist in ensuring high availability and
+							scalability of mission critical systems, so that
+							your IT ecosystem can support and grow with your
+							operations.
+						</p>
 						<br />
 						<a className="btn btn-secondary" href="/about">
 							Get in touch
 						</a>
-					</div>
+					</Intro>
 					<div className="col-sm-4">
-						<img src={teamImg} alt="..." />
+						<img src={teamImg} alt="..." className="img-fluid" />
 					</div>
-				</div>
+				</div>{" "}
+				<hr className="featurette-divider" />
 			</div>
-			<br />
-			<div className="container bg-grey">
+			<Values className="container bg-grey">
 				<div className="row">
-					<div className="col-sm-4">
-						<span className="glyphicon glyphicon-globe logo slideanim"></span>
+					<div className="col-sm-5">
+						<img src={compImg} alt="..." className="img-fluid" />
 					</div>
-					<div className="col-sm-8">
+					<div className="col-sm-7 company-inf">
 						<h2>Our Values</h2>
 						<br />
-						<h4>
-							<strong>MISSION:</strong> To become the world’s
-							preferred IT Solutions company – applying insight,
-							service quality and innovation to optimize business
-							and societal growth, utilizing technology.
-						</h4>
+						<h5>
+							<strong>MISSION:</strong>
+							<br />
+							<br />
+							To become the world’s preferred IT Solutions company
+							– applying insight, service quality and innovation
+							to optimize business and societal growth, utilizing
+							technology.
+						</h5>
 						<br />
 						<p>
 							<strong>VISION:</strong>
+							<br />
 							<ul>
 								<li>
 									<p>
@@ -79,31 +127,35 @@ function bodyAbout() {
 						</p>
 					</div>
 				</div>
-			</div>
-			<div className="bg-light py-5">
+			</Values>
+			<div className="bg-light team py-5">
 				<div className="container py-5">
 					<div className="row mb-4">
-						<div className="col-lg-5">
+						<div className="col text-center">
 							<h2 className="display-4 font-weight-light">
 								Our team
 							</h2>
-							<p className="font-italic text-muted">
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit.
+							<p>
+								Customer-centricity is at the core of everything
+								we do. Our flat leadership structure maximizes
+								transparency and agility while minimizing
+								deployment time for new ideas. Meet the team
+								that powers business growth at Nous by inspiring
+								innovation, customer success, and trust.
 							</p>
 						</div>
 					</div>
 
-					<div className="row text-center">
+					<Team className="row text-center">
 						<div className="col-xl-3 col-sm-6 mb-5">
 							<div className="bg-white rounded shadow-sm py-5 px-4">
 								<img
-									src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png"
+									src={jeromeImg}
 									alt=""
 									width="100"
 									className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
 								/>
-								<h5 className="mb-0">Manuella Nevoresky</h5>
+								<h5 className="mb-0">Jerome Tabiri</h5>
 								<span className="small text-uppercase text-muted">
 									CEO - Founder
 								</span>
@@ -134,14 +186,14 @@ function bodyAbout() {
 						<div className="col-xl-3 col-sm-6 mb-5">
 							<div className="bg-white rounded shadow-sm py-5 px-4">
 								<img
-									src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png"
+									src={wahabImg}
 									alt=""
 									width="100"
 									className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
 								/>
-								<h5 className="mb-0">Samuel Hardy</h5>
+								<h5 className="mb-0">Abdul Wahab</h5>
 								<span className="small text-uppercase text-muted">
-									CEO - Founder
+									COO - Founder
 								</span>
 								<ul className="social mb-0 list-inline mt-3">
 									<li className="list-inline-item">
@@ -175,9 +227,9 @@ function bodyAbout() {
 									width="100"
 									className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
 								/>
-								<h5 className="mb-0">Tom Sunderland</h5>
+								<h5 className="mb-0">Theodore Tabiri</h5>
 								<span className="small text-uppercase text-muted">
-									CEO - Founder
+									CTO - Consultant
 								</span>
 								<ul className="social mb-0 list-inline mt-3">
 									<li className="list-inline-item">
@@ -212,9 +264,9 @@ function bodyAbout() {
 									width="100"
 									className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
 								/>
-								<h5 className="mb-0">John Tarly</h5>
+								<h5 className="mb-0">Ibrahim Jibrilu</h5>
 								<span className="small text-uppercase text-muted">
-									CEO - Founder
+									Network Lead
 								</span>
 								<ul className="social mb-0 list-inline mt-3">
 									<li className="list-inline-item">
@@ -240,7 +292,7 @@ function bodyAbout() {
 								</ul>
 							</div>
 						</div>
-					</div>
+					</Team>
 				</div>
 			</div>
 		</div>

@@ -5,43 +5,64 @@ import slide01 from "./../img/pexels-christina-morillo-1181354.jpg";
 import slide02 from "./../img/pexels-charles-wundengba-4212955.jpg";
 import slide03 from "./../img/pexels-cottonbro-5054208.jpg";
 import slide04 from "./../img/pexels-omotayo-tajudeen-3213283.jpg";
+import styled from "styled-components";
+
+const Image = styled.img`
+	-webkit-filter: brightness(60%);
+	vertical-align: middle;
+	height: auto;
+	width: 100%;
+`;
+
+const Text = styled.div`
+	display: block;
+	align-content: center;
+	text-align: center;
+	font-size: 1vw;
+	h3 {
+		text-shadow: 1px 1px gold;
+		text-align: right;
+		font-size: 2.5vw;
+		padding-bottom: 40px;
+	}
+	p,
+	ul {
+		font-size: 1.5vw;
+		text-shadow: 1px 1px blue;
+		text-align: left;
+		font-weight: normal;
+		font-family: "Roboto Slab", serif;
+	}
+`;
 
 function Header() {
 	return (
-		<div>
+		<div className="container-fluid">
 			<Carousel fade>
-				<Carousel.Item interval={3000}>
-					<img
-						className="img-fluid"
-						src={slide01}
-						alt="First slide"
-					/>
+				<Carousel.Item interval={5000}>
+					<Image src={slide01} alt="First slide" fluid />
 					<Carousel.Caption>
-						<div className="text-block ">
+						<Text>
 							<h3>
 								Bringing together technology, culture and value
 							</h3>
-							<p>
+							<p className="d-none d-sm-block">
 								Syslog Solution is committed to helping
 								enterprises get ready for the coming digital
 								change. Businesses are faced with the
 								transformation of legacy while keeping pace with
 								digital, data, voice and soon AI.
 							</p>
-						</div>
+						</Text>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item interval={3000}>
-					<img
-						className="d-block w-100"
-						src={slide02}
-						alt="Third slide"
-					/>
+				<Carousel.Item interval={5000}>
+					<Image src={slide02} alt="Third slide" fluid />
 
 					<Carousel.Caption>
-						<div className="text-block">
+						<Text>
 							<h3>Move fast and connect deeper</h3>
-							<p>
+							<p className="d-none d-sm-block">
 								Digital has the power to connect the
 								unconnected, and drives humans to expect the
 								unexpected in all we do. Your business is built
@@ -51,55 +72,40 @@ function Header() {
 								engage smarter, and connect deeper with your
 								customers to grow your business.
 							</p>
-						</div>
+						</Text>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item interval={3000}>
-					<img
-						className="d-block w-100"
-						src={slide03}
-						alt="Third slide"
-					/>
+				<Carousel.Item interval={5000}>
+					<Image src={slide03} alt="Third slide" fluid />
 
 					<Carousel.Caption>
-						<div className="text-block">
+						<Text>
 							<h3> Improved IT service Delivery </h3>
-							<p>
+							<p className="d-none d-sm-block">
 								Our DevOps approach helps to develop & deploy
 								high-quality software products and services.
-								Providing better resource management & Devops
-								management plans with re-using option & low-cost
-								implementation.
+								Welcome to the new way:
 							</p>
-							<ul className="text-left">
+							<ul className="d-none d-sm-block">
 								<li>Instant scaling up of servers</li>
-								<li>No more mismatch of server states</li>
 								<li>Real-time deployments with no downtime</li>
 								<li>Drastically improve consistency</li>
 							</ul>
-						</div>
+						</Text>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item interval={3000}>
-					<img
-						className="d-block w-100"
-						src={slide04}
-						alt="Third slide"
-					/>
-
+				<Carousel.Item interval={5000}>
+					<Image src={slide04} alt="Third slide" fluid />
 					<Carousel.Caption>
-						<div className="text-block">
+						<Text>
 							<h3>Intercepting Banking Experiences</h3>
-							<p>
+							<p className="d-none d-sm-block">
 								Together with our partner Bank-Genie we create
 								technology that intercepts traditional banking
 								processes and transforms them into experiences
 								to make things easier, better and faster.
-								Because, great experiences have the power to
-								inspire, make emotional connections, build
-								loyalty, and drive commerce.
 							</p>
-						</div>
+						</Text>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>

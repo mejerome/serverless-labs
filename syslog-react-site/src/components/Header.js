@@ -1,5 +1,18 @@
 import React from "react";
-import "./../components/about/about.css";
+import styled from "styled-components";
+
+const Message = styled.div`
+	h1 {
+		font-family: "Acme", sans-serif;
+		color: #191970;
+		text-align: center;
+		font-size: 3vmax;
+	}
+	p {
+		font-family: "Roboto", sans-serif;
+		font-size: 1rem;
+	}
+`;
 
 function headerAbout(props) {
 	return (
@@ -9,19 +22,11 @@ function headerAbout(props) {
 					<img src={props.img} className="blur img-fluid" alt="..." />
 				</div>
 
-				<div className="container text-white">
-					<h1 className="display-4">{props.title}</h1>
-					<p className="lead mx-auto">{props.text}</p>
+				<Message className="container">
+					<h1>{props.title}</h1>
+					<p>{props.text}</p>
 					<hr className="my-4" />
-
-					<a
-						className="btn btn-primary btn-lg"
-						href="/"
-						role="button"
-					>
-						Learn more
-					</a>
-				</div>
+				</Message>
 			</div>
 		</div>
 	);

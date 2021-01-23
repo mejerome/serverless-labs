@@ -1,15 +1,14 @@
 import React from "react";
+import "./services.css";
 import cloudImg from "./../images/cloud-computing-2001090_1920.jpeg";
-import codeImg from "./../images/code-944499_1280-1024x550.jpg";
-import slide07 from "./../images/slide07.jpg";
+import codeImg from "./../img/heylagostechie-kwzWjTnDPLk-unsplash.jpg";
 
 function BodyServices() {
 	return (
 		<div>
-			<div className="container text-center">
-				<img src={slide07} className="img-fluid " alt=".." />
+			<div className="container services text-center">
 				<hr className="featurette-divider" />
-				<div className="row">
+				<div className="row text-justify">
 					<div className="col-lg-4">
 						<img
 							src={cloudImg}
@@ -18,13 +17,13 @@ function BodyServices() {
 							className="rounded"
 						/>
 
-						<h2>Heading</h2>
+						<h3>Cloud services</h3>
 						<p>
-							Donec sed odio dui. Etiam porta sem malesuada magna
-							mollis euismod. Nullam id dolor id nibh ultricies
-							vehicula ut id elit. Morbi leo risus, porta ac
-							consectetur ac, vestibulum at eros. Praesent commodo
-							cursus magna.
+							Cloud computing promises lower capital investment
+							and predictable operating expenditure with increased
+							infrastructure flexibility. We have the skills and
+							experience to ensure that your migration from
+							existing applications is smooth and hassle-free.
 						</p>
 						<p>
 							<a
@@ -44,13 +43,13 @@ function BodyServices() {
 							className="rounded"
 						/>
 
-						<h2>Heading</h2>
+						<h3>App & web dev</h3>
 						<p>
-							Duis mollis, est non commodo luctus, nisi erat
-							porttitor ligula, eget lacinia odio sem nec elit.
-							Cras mattis consectetur purus sit amet fermentum.
-							Fusce dapibus, tellus ac cursus commodo, tortor
-							mauris condimentum nibh.
+							We help companies to cut IT costs dramatically
+							improving efficiency and productivity by building
+							customizable solutions that are designed
+							specifically for your organization. Each solution is
+							designed the way you require it,
 						</p>
 						<p>
 							<a
@@ -70,13 +69,13 @@ function BodyServices() {
 							className="rounded"
 						/>
 
-						<h2>Heading</h2>
+						<h3>Cyber security</h3>
 						<p>
-							Donec sed odio dui. Cras justo odio, dapibus ac
-							facilisis in, egestas eget quam. Vestibulum id
-							ligula porta felis euismod semper. Fusce dapibus,
-							tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus.
+							Services include Security Audits, Penetration
+							Testing, Web Application Security, SCADA and Managed
+							Security Services. Protect data stored online/cloud
+							infrastructure such as AWS, Azure, Enterprise File
+							Sharing Solution.
 						</p>
 						<p>
 							<a
@@ -89,7 +88,9 @@ function BodyServices() {
 						</p>
 					</div>
 				</div>
-				<div className="row">
+				<hr className="featurette-divider" />
+
+				<div className="row text-justify">
 					<div className="col-lg-4">
 						<img
 							src={cloudImg}
@@ -98,13 +99,12 @@ function BodyServices() {
 							className="rounded"
 						/>
 
-						<h2>Heading</h2>
+						<h3>Datacenter transformation</h3>
 						<p>
-							Donec sed odio dui. Etiam porta sem malesuada magna
-							mollis euismod. Nullam id dolor id nibh ultricies
-							vehicula ut id elit. Morbi leo risus, porta ac
-							consectetur ac, vestibulum at eros. Praesent commodo
-							cursus magna.
+							We offer reliable end-to-end IT Remote
+							Infrastructure Management Services to automate your
+							own IT Infrastructure with today’s needs &
+							tomorrow’s readiness.
 						</p>
 						<p>
 							<a
@@ -124,13 +124,13 @@ function BodyServices() {
 							className="rounded"
 						/>
 
-						<h2>Heading</h2>
+						<h3>IT consultancy</h3>
 						<p>
-							Duis mollis, est non commodo luctus, nisi erat
-							porttitor ligula, eget lacinia odio sem nec elit.
-							Cras mattis consectetur purus sit amet fermentum.
-							Fusce dapibus, tellus ac cursus commodo, tortor
-							mauris condimentum nibh.
+							Before you spend money on your critical IT
+							infrastructure project, whether it’s a server
+							upgrade, network overhaul, office setup, or cloud
+							migration, consider Syslog Solution as your trusted
+							partner.
 						</p>
 						<p>
 							<a
@@ -150,13 +150,12 @@ function BodyServices() {
 							className="rounded"
 						/>
 
-						<h2>Heading</h2>
+						<h3>Financial Inclusion</h3>
 						<p>
-							Donec sed odio dui. Cras justo odio, dapibus ac
-							facilisis in, egestas eget quam. Vestibulum id
-							ligula porta felis euismod semper. Fusce dapibus,
-							tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus.
+							Bank Genie our partner, creates technology that
+							intercepts traditional banking processes and
+							transforms them into experiences to make things
+							easier, better and faster. Products are:
 						</p>
 						<p>
 							<a
