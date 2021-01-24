@@ -11,18 +11,20 @@ const Image = styled.img`
 	-webkit-filter: brightness(60%);
 	vertical-align: middle;
 	height: auto;
+	min-height: 300px;
 	width: 100%;
+	padding-top: 40px;
 `;
 
 const Text = styled.div`
 	display: block;
 	align-content: center;
 	text-align: center;
-	font-size: 1vw;
 	h3 {
 		text-shadow: 1px 1px gold;
 		text-align: right;
-		font-size: 2.5vw;
+		align-item: center
+		font-size: 3vmin;
 		padding-bottom: 40px;
 	}
 	p,

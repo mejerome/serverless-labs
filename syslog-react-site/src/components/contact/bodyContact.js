@@ -1,23 +1,5 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
-import GoogleMapReact from "google-map-react";
-import { Icon } from "@iconify/react";
-import locationIcon from "@iconify/icons-mdi/map-marker";
-
-const location = {
-	address: "7 City Enclave Brick Cl, Plant Pool Road, Accra, Ghana",
-	lat: 5.6044443020880506,
-	lng: -0.2095152578967187,
-};
-
-const LocationPin = ({ text }) => {
-	return (
-		<div className="pin">
-			<Icon icon={locationIcon} className="pin-icon" />
-			<p className="pin-text">{text}</p>
-		</div>
-	);
-};
 
 function BodyContact() {
 	return (
@@ -76,17 +58,14 @@ function BodyContact() {
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="contact-map">
-						<GoogleMapReact
-							bootstrapURLKeys={{ key: "" }}
-							defaultCenter={location}
-							defaultZoom={17}
-						>
-							<LocationPin
-								lat={location.lat}
-								lng={location.lng}
-								text={location.address}
-							/>
-						</GoogleMapReact>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9444.137627376173!2d-0.21056675759986493!3d5.600849847010152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b38911a84f3%3A0xb1e7f2b6930d2516!2sSyslog%20Solution%20Limited!5e0!3m2!1sen!2suk!4v1611484257862!5m2!1sen!2suk"
+							width="550"
+							height="400"
+							frameborder="0"
+							aria-hidden="false"
+							tabindex="0"
+						></iframe>
 						{/* <iframe
 							src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4"
 							frameborder="0"
@@ -109,17 +88,16 @@ function BodyContact() {
 								We'll never share your email with anyone else.
 							</Form.Text>
 						</Form.Group>
+						<Form.Group controlId="formGridAddress1">
+							<Form.Label>Phone Number</Form.Label>
+							<Form.Control placeholder="+233 000000000" />
+						</Form.Group>
 
-						<Form.Group controlId="formBasicPassword">
-							<Form.Label>Password</Form.Label>
-							<Form.Control
-								type="password"
-								placeholder="Password"
-							/>
+						<Form.Group controlId="exampleForm.ControlTextarea1">
+							<Form.Label>Message</Form.Label>
+							<Form.Control as="textarea" rows={3} />
 						</Form.Group>
-						<Form.Group controlId="formBasicCheckbox">
-							<Form.Check type="checkbox" label="Check me out" />
-						</Form.Group>
+
 						<Button variant="primary" type="submit">
 							Submit
 						</Button>
