@@ -1,5 +1,8 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import styled from "styled-components";
+
+const IFrame = styled.iframe``;
 
 function BodyContact() {
 	return (
@@ -58,14 +61,14 @@ function BodyContact() {
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="contact-map">
-						<iframe
+						<IFrame
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9444.137627376173!2d-0.21056675759986493!3d5.600849847010152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b38911a84f3%3A0xb1e7f2b6930d2516!2sSyslog%20Solution%20Limited!5e0!3m2!1sen!2suk!4v1611484257862!5m2!1sen!2suk"
 							width="550"
 							height="400"
 							frameborder="0"
 							aria-hidden="false"
 							tabindex="0"
-						></iframe>
+						></IFrame>
 						{/* <iframe
 							src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4"
 							frameborder="0"
