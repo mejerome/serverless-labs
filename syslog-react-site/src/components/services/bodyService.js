@@ -15,7 +15,7 @@ function BodyServices() {
 									<i className="fas fa-cloud"></i>
 								</div>
 								<div className="feature-content">
-									<h5>Cloud services</h5>
+									<h5>Cloud computing</h5>
 									<p>
 										Cloud computing promises lower capital
 										investment and predictable operating
@@ -91,7 +91,7 @@ function BodyServices() {
 									<i class="fas fa-server"></i>
 								</div>
 								<div className="feature-content">
-									<h5>Datacenter Transformation</h5>
+									<h5>Datacenter automation</h5>
 									<p>
 										We offer reliable end-to-end IT Remote
 										Infrastructure Management Services to
@@ -119,7 +119,7 @@ function BodyServices() {
 									<i class="fas fa-hands-helping"></i>
 								</div>
 								<div className="feature-content">
-									<h5>Consultancy</h5>
+									<h5>IT consultancy</h5>
 									<p>
 										Before you spend money on your critical
 										IT infrastructure project, whether it’s

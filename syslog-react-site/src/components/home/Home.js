@@ -5,6 +5,7 @@ import Navbar from "./../Navbar";
 import "./../styles.css";
 import { motion } from "framer-motion";
 import { animationThree, transition } from "../../animations";
+import Footer from "../footer";
 
 function Home() {
 	return (
@@ -18,6 +19,7 @@ function Home() {
 			<Navbar />
 			<Header />
 			<BodyHome />
+			<Footer />
 		</motion.div>
 	);
 }

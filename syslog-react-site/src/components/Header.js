@@ -10,7 +10,7 @@ const Message = styled.div`
 	}
 	p {
 		font-family: "Roboto", sans-serif;
-		font-size: 1rem;
+		font-size: 1.5vmax;
 	}
 `;
 

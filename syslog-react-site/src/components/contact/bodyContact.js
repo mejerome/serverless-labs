@@ -69,13 +69,6 @@ function BodyContact() {
 							aria-hidden="false"
 							tabindex="0"
 						></IFrame>
-						{/* <iframe
-							src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4"
-							frameborder="0"
-							scrolling="no"
-							marginheight="0"
-							marginwidth="0"
-						></iframe> */}
 					</div>
 				</div>
 

@@ -6,6 +6,7 @@ import Navbar from "./../Navbar";
 import { motion } from "framer-motion";
 import { animationOne, transition } from "../../animations";
 import styled from "styled-components";
+import Footer from "./../footer";
 
 const Spacer = styled.div`
 	padding-bottom: 15px;
@@ -29,6 +30,7 @@ We give you unbounded progress."
 				img={servicesImg}
 			/>
 			<BodyServices />
+			<Footer />
 		</motion.div>
 	);
 }

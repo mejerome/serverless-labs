@@ -8,7 +8,7 @@ import slide04 from "./../img/pexels-omotayo-tajudeen-3213283.jpg";
 import styled from "styled-components";
 
 const Image = styled.img`
-	-webkit-filter: brightness(60%);
+	-webkit-filter: brightness(50%);
 	vertical-align: middle;
 	height: auto;
 	min-height: 300px;
@@ -24,7 +24,7 @@ const Text = styled.div`
 		text-shadow: 1px 1px gold;
 		text-align: right;
 		align-item: center
-		font-size: 3vmin;
+		font-size: 3vmax;
 		padding-bottom: 40px;
 	}
 	p,

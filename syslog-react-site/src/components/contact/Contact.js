@@ -6,6 +6,7 @@ import Image from "./../img/pexels-pixabay-356056.png";
 import { motion } from "framer-motion";
 import { animationOne, transition } from "../../animations";
 import styled from "styled-components";
+import Footer from "./../footer";
 
 const Spacer = styled.div`
 	padding-bottom: 15px;
@@ -28,6 +29,9 @@ function Contact() {
 				img={Image}
 			/>
 			<BodyContact />
+			<Spacer />
+			<Spacer />
+			<Footer />
 		</motion.div>
 	);
 }
