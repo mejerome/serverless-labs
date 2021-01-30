@@ -57,10 +57,10 @@ const Footer = () => {
 						</div>
 						<div className="row">
 							<div className="col item p-5 social">
-								<a href="/">
+								<a href="https://www.facebook.com/Sysloggh-103607251268036">
 									<i className="fa fa-facebook"></i>
 								</a>
-								<a href="/">
+								<a href="https://twitter.com/sysloggh">
 									<i className="fa fa-twitter"></i>
 								</a>
 
