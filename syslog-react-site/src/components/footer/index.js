@@ -57,17 +57,20 @@ const Footer = () => {
 						</div>
 						<div className="row">
 							<div className="col item p-5 social">
-								<a href="https://www.facebook.com/Sysloggh-103607251268036">
+								<a
+									href="https://www.facebook.com/Sysloggh-103607251268036"
+									target="_blank"
+								>
 									<i className="fa fa-facebook"></i>
 								</a>
 								<a href="https://twitter.com/sysloggh">
 									<i className="fa fa-twitter"></i>
 								</a>
 
-								<a href="/">
+								{/* <a href="/">
 									<i className="fa fa-instagram"></i>
-								</a>
-								<a href="/">
+								</a> */}
+								<a href="https://www.linkedin.com/in/syslog-gh-4010091a4/">
 									<i className="fa fa-linkedin"></i>
 								</a>
 							</div>
