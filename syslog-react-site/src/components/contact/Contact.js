@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import BodyContact from "./bodyContact";
 import Navbar from "./../Navbar";
-import Image from "./../img/pexels-pixabay-356056.png";
+import Image from "./../img/pexels-pixabay-356056.jpg";
 import { motion } from "framer-motion";
 import { animationOne, transition } from "../../animations";
 import styled from "styled-components";
