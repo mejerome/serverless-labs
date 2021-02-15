@@ -165,6 +165,7 @@ function bodyAbout() {
 											href="https://www.facebook.com/jtabiri/"
 											className="social-link"
 											target="_blank"
+											rel="noreferrer"
 										>
 											<i className="fa fa-facebook-f"></i>
 										</a>
@@ -173,7 +174,7 @@ function bodyAbout() {
 										<a
 											href="https://twitter.com/mejerome19"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-twitter"></i>
 										</a>
@@ -182,7 +183,7 @@ function bodyAbout() {
 										<a
 											href="https://www.instagram.com/mejerome"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-instagram"></i>
 										</a>
@@ -191,7 +192,7 @@ function bodyAbout() {
 										<a
 											href="https://www.linkedin.com/in/jtabiri"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-linkedin"></i>
 										</a>
@@ -216,7 +217,7 @@ function bodyAbout() {
 										<a
 											href="/"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-facebook-f"></i>
 										</a>
@@ -225,7 +226,7 @@ function bodyAbout() {
 										<a
 											href="https://twitter.com/atetse"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-twitter"></i>
 										</a>
@@ -234,7 +235,7 @@ function bodyAbout() {
 										<a
 											href="/"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-instagram"></i>
 										</a>
@@ -243,7 +244,7 @@ function bodyAbout() {
 										<a
 											href="https://www.linkedin.com/in/abdul-wahab-daud-b1912118"
 											className="social-link"
-											target="_blank"
+											target="_blank" rel="noreferrer"
 										>
 											<i className="fa fa-linkedin"></i>
 										</a>

@@ -59,7 +59,7 @@ const Footer = () => {
 							<div className="col item p-5 social">
 								<a
 									href="https://www.facebook.com/Sysloggh-103607251268036"
-									target="_blank"
+									target="_blank" rel="noreferrer"
 								>
 									<i className="fa fa-facebook"></i>
 								</a>
