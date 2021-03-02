@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mejerome/serverless-labs
+  repo: mejerome/serverless-labs/gatsby-netlify-okta
 media_folder: static/assets
 public_folder: assets
 collections:
