@@ -19,11 +19,11 @@ const NavItems = styled.div`
 
 function Navbar() {
 	return (
-		<div className="container">
+		<div>
 			<nav className="navbar navbar-expand-lg navbar-light fixed-top bg-light">
 				<a className="navbar-brand" href="/">
 					<NavLink to="/">
-						<img src={syslogLogo} alt="logo" height="60" />
+						<img src={syslogLogo} alt="logo" height="50" />
 					</NavLink>
 				</a>
 				<button
