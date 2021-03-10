@@ -36,5 +36,5 @@ export const animationThree = {
 };
 
 export const transition = {
-	duration: 1,
+	duration: 0.6,
 };
